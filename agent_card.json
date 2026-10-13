@@ -1,0 +1,26 @@
+{
+  "name": "Hello Agent",
+  "description": "Use it when a user asks you to say hello or any other greeting. Always show the response exactly as given before adding any additional information.",
+  "version": "0.1.0",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "greet_user",
+      "name": "Greet User",
+      "description": "Greets the user",
+      "usage_notes": "Use it for any greeting.",
+      "requires_approval": false,
+      "expected_duration_seconds": 30,
+      "output_format": "JSON with keys: status, message",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+        },
+        "required": []
+      }
+    }
+  ]
+}
